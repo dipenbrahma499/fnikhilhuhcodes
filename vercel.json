@@ -1,2 +1,2 @@
 # Frontend is static and can be deployed directly on Vercel.
-{"rewrites":[{"source":"/api/:path*","destination":"https://api.short.dipenbrahma.in/api/:path*"},{"source":"/:slug","destination":"/index.html"}]}
+{"rewrites":[{"source":"/api/:path*","destination":"https://api.short.assam-nxtr-in.netlify.app/api/:path*"},{"source":"/:slug","destination":"/index.html"}]}
