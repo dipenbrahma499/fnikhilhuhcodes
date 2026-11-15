@@ -1,5 +1,5 @@
-const DOMAIN='https://short.dipenbrahma.in';
-const seed=[{id:'1',slug:'launch',url:'https://dipenbrahma.in/launch',clicks:1248,created:'Today',expiry:'Never',status:'Active'},{id:'2',slug:'design',url:'https://www.figma.com/community',clicks:842,created:'Yesterday',expiry:'30 days',status:'Active'},{id:'3',slug:'docs',url:'https://developer.mozilla.org/en-US/',clicks:356,created:'Aug 12, 2026',expiry:'Never',status:'Active'}];
+const DOMAIN='https://assam-nxtr-in.netlify.app';
+const seed=[{id:'1',slug:'launch',url:'https://assam-nxtr-in.netlify.app/launch',clicks:1248,created:'Today',expiry:'Never',status:'Active'},{id:'2',slug:'design',url:'https://www.figma.com/community',clicks:842,created:'Yesterday',expiry:'30 days',status:'Active'},{id:'3',slug:'docs',url:'https://developer.mozilla.org/en-US/',clicks:356,created:'Aug 12, 2026',expiry:'Never',status:'Active'}];
 let links=JSON.parse(localStorage.getItem('dipen-links')||'null')||seed;let page='home',dark=localStorage.getItem('dipen-dark')!=='false';
 const icons={bolt:'⚡',link:'↗',chart:'◒',qr:'▦',copy:'▣',trash:'⌫',sun:'☼',moon:'◐',arrow:'→'};
 function save(){localStorage.setItem('dipen-links',JSON.stringify(links))}function short(l){return `${DOMAIN}/${l.slug}`}function esc(s){return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
